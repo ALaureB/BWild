@@ -69,8 +69,34 @@ hr {
 	margin-top : 150px;
 }
 
-#birthdays, #weather, #quote, #plans, #insta {
-	border : 1px solid black;
+#birthdays, #weather, #quote, #plans, #horos  {
+	border : 2px solid #ffe4c1;
+	border-radius: 6px;
 	margin : 20px;
 	height: 150px;
+}
+
+#insta {
+	border : 2px solid #ffe4c1;
+	border-radius: 6px;
+	margin : 20px;
+	height: 320px;
+}
+
+
+
+/* Instagram */
+
+#instafeed {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 65px;
+}
+
+#instafeed img {
+  display:block;
+  width:80%;
 }
