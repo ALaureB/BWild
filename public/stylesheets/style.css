@@ -1,5 +1,5 @@
 body {
-  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 };
   
 h1 {
@@ -8,11 +8,13 @@ h1 {
 
 h2 {
 	color: rgb(31, 165, 151);
-	font-weight: bold;
+	font-weight: 700;
 }
 
 h3 {
-
+	color: #f9a02e;
+	font-weight: 700;
+	padding-bottom: 15px;
 }
 
 h4 {
