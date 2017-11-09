@@ -4,6 +4,7 @@
     height: 380px;
     border: 2px solid rgb(88, 196, 184);
     border-radius: 5px;
+    margin-top: 150px;
 }
 
 .cadre:hover {
@@ -11,7 +12,6 @@
 }
 
 .top {
-    margin-top: 1px;
     background-color: rgb(251, 168, 88); 
     height: 110px;
     border-radius: 4px 4px 0 0;

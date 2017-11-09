@@ -14,6 +14,10 @@ router.get('/homepage', function(req, res, next) {
 		title: 'Accueil - BWild !!',
 		user: '#username'
 	});
-})
+});
+
+router.get('/profil', function(req, res, next) {
+	res.render('wildmates')
+});
 
 module.exports = router;
