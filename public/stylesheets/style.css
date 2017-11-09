@@ -1,0 +1,72 @@
+body {
+  padding: 50px;
+  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+};
+  
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+a {
+
+}
+
+a:hover {
+
+}
+
+.button {
+
+}
+
+.button:hover {
+	
+}
+
+.important {
+
+}
+
+.warning {
+	color: red;
+	font-weight: bold;
+}
+
+
+/* Surlignage personnalisé */
+
+/*::selection{
+	background-color: #012051;
+	color: white;
+}
+
+::-moz-selection {
+	background-color: #012051;
+	color: white;
+} */
+
+/*Media queries*/
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (min-width: 489px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
