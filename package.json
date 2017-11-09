@@ -5,6 +5,17 @@
   "scripts": {
     "start": "node ./bin/www"
   },
+"engines": {
+    "node": "6.11.1"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+"repository": {
+    "type": "git",
+    "url": "https://github.com/ALaureB/BWild"
+  },
   "dependencies": {
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
