@@ -1,7 +1,29 @@
+img {
+    width: 10%;
+    margin-left: 10px;
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    border: 2px solid #f9a02e;
+}
+
+form.navbar-form.navbar-right {
+    margin-top: 25px;
+}
+
 .padding {
     padding: 5px;
 }
 
-input {
-    border-color: rgb(31, 165, 151);
+input.form-control {
+    border: 2px solid rgb(31, 165, 151);
+    margin-right: 15px;
+}
+
+button.btn.btn-default {
+    padding: 7px 15px;
+    background-color: rgb(31, 165, 151);
+    font-weight: bolder;
+    color: white;
 }
