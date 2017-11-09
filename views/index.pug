@@ -6,23 +6,23 @@ block css
 block content
 	nav.navbar.navbar-default
 		.container-fluid
-		.navbar-header
-			button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
-			span.sr-only Toggle navigation
-			span.icon-bar
-			span.icon-bar
-			span.icon-bar
-			a(href='#')
-				img(src='images/bwild_logo.svg')
-		#bs-example-navbar-collapse-1.collapse.navbar-collapse
-			form.navbar-form.navbar-right
-				.form-group
-				label.padding(for="email") E-mail :
-				input.form-control(type='text', placeholder='bob@yopmail.com')
-				form.navbar-form
+			.navbar-header
+				button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+				span.sr-only Toggle navigation
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+				a.nav.navbar-nav(href='#')
+					img(src='images/bwild_logo.svg')
+			#bs-example-navbar-collapse-1.collapse.navbar-collapse
+				form.navbar-form.navbar-right
 					.form-group
-					label.padding(for="password") Password :
-					input.form-control(type='text')
-					button.btn.btn-default.padding(type='submit') LOGIN
+					label.padding(for="email") E-mail :
+					input.form-control(type='text', placeholder='bob@yopmail.com')
+					form.navbar-form
+						.form-group
+						label.padding(for="password") Password :
+						input.form-control(type='text')
+						button.btn.btn-default.padding(type='submit') LOGIN
 	h1= title
 	p Welcome to #{title}, the WCS social network !
