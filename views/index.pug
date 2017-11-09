@@ -2,6 +2,7 @@ extends layout
 
 block css
 	link(rel='stylesheet', type='text/css', href='/stylesheets/nav_login.css')
+	link(rel='stylesheet', type='text/css', href='/stylesheets/card.css')
 
 block content
 	nav.navbar.navbar-default
@@ -24,5 +25,15 @@ block content
 					label.padding(for="password") Password :
 					input.form-control(type='text')
 					button.btn.btn-default.padding(type='submit') LOGIN
+
 	h1= title
 	p Welcome to #{title}, the WCS social network !
+
+	div.col-xs-4.cadre
+		div.top
+			a(data-control-name='identity_profile_photo', href='#')
+				img.profile.photo(alt='Florie Lesueur', src='https://media.licdn.com/mpr/mpr/shrinknp_100_100/AAEAAQAAAAAAAAs6AAAAJDhlYzY0NTg3LTdhM2ItNDM3MS05YmY2LTZlY2NhZGNkMTBjYg.jpg')
+		a(data-control-name='identity_welcome_message', href='/in/flesueur/')
+		| Florie Lesueur
+		p(class='Sans-13px-black-55%') Web developper fullstack JS (React) at Wild Code School (in training)
+
