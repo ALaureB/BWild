@@ -1,16 +1,22 @@
+.navbar {
+    border-radius: 0;
+}
+
+.navbar-header {
+    width: 475px;
+}
+
 img {
-    width: 10%;
+    width: 25%;
     margin-left: 10px;
 }
 
 .navbar-default {
     background-color: #ffffff;
-    border: 2px solid #f9a02e;
+    border-bottom: 2px solid #f9a02e;
 }
 
-form.navbar-form.navbar-right {
-    margin-top: 25px;
-}
+
 
 .padding {
     padding: 5px;
@@ -22,7 +28,7 @@ input.form-control {
 }
 
 button.btn.btn-default {
-    padding: 7px 15px;
+    padding: 6px 18px;
     background-color: rgb(31, 165, 151);
     font-weight: bolder;
     color: white;
