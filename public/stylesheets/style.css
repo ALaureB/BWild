@@ -8,7 +8,8 @@ h1 {
 }
 
 h2 {
-
+	color: rgb(31, 165, 151);
+	font-weight: bold;
 }
 
 h3 {
@@ -27,13 +28,21 @@ a:hover {
 
 }
 
-.button {
 
+.btn {
+	margin: 10px;
+	color: #ffffff;
+	background-color: #f9a02e;
+	font-size: 1.2em;
 }
 
-.button:hover {
-	
+.btn:hover {
+	color: #ffffff;
+	background-color: #f9a02e;
+	opacity: 0.8;
+	transition: .8s ease;
 }
+
 
 .important {
 

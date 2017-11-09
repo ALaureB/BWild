@@ -11,7 +11,8 @@ router.get('/', function(req, res, next) {
 /* GET home page. */
 router.get('/homepage', function(req, res, next) {
 	res.render('homepage', {
-		title: 'Accueil - BWild !!'
+		title: 'Accueil - BWild !!',
+		user: '#username'
 	});
 })
 
