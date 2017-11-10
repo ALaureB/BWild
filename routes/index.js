@@ -21,14 +21,12 @@ router.get('/', function(req, res, next) {
 	});
 });
 
-/* GET home page. */
-router.get('/homepage', function(req, res, next) {
-	connection.query('SELECT * FROM person',function (error, results, fields) {
-		// Stockage des visites pour page admin
+/* GET home page personnalisée par login */
+router.get('/homepage-:id(\\d+)', function(req, res, next) {
+	connection.query('SELECT * FROM person where id_p = ?', [req.params.id], function (error, results, fields) {
 		if (error) {
 			console.log(error);
 		}
-		console.log(results);
 		res.render('homepage', {
 			title: 'Accueil - BWild !!',
 			user: '#username',
@@ -36,6 +34,9 @@ router.get('/homepage', function(req, res, next) {
 		});
 	});
 });
+
+
+
 
 /* GET Wildmates */
 router.get('/profil', function(req, res, next) {
