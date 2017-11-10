@@ -42,6 +42,10 @@ router.get('/profil', function(req, res, next) {
 	res.render('wildmates')
 });
 
+
 /* GET my profile */
+router.get('/login', function(req, res, next) {
+	res.render('form')
+});
 
 module.exports = router;
