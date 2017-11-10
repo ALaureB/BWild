@@ -9,12 +9,12 @@ nav.navbar.navbar-default
             a.nav.navbar-nav(href='#')
                 img(src='images/bwild_logo.svg')
         #bs-example-navbar-collapse-1.collapse.navbar-collapse
-            form.navbar-form.navbar-right
+            form.navbar-form.navbar-right(method="POST")
                 label.padding(for="email") E-mail :
                 .form-group
-                    input.form-control(type='text', placeholder='bob@yopmail.com')
+                    input.form-control(name='email', required='', autofocus='', type='text', placeholder='bob@yopmail.com')
                 label.padding(for="password") Password :
                 .form-group
-                    input.form-control(type='text')
+                    input.form-control(name='password', placeholder='Password', type='password' required='')
                 .form-group
                     button.btn.btn-default.padding(type='submit') LOGIN

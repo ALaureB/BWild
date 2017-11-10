@@ -14,12 +14,47 @@ connection.connect(function(err) {
 	console.log('connected as id ' + connection.threadId); // Vérification de la connexion en console
 });
 
-/* GET login page. */
-router.get('/', function(req, res, next) {
-	res.render('index', {
-		title: 'BWild !!'
+/* GET /login */
+router.get('/login', function(req, res) {
+    // page de login (formulaire)
+    res.render('form');
+});
+// POST /admin (page d'affichage une fois le login et password validés)
+router.post('/login', function(req, res) {
+    // page de login 
+    // puis
+    // redirection vers /admin/logged (page d'accueil de l'espace admin)
+    let email = req.body.email;
+    let password = req.body.password;
+    connection.query('SELECT * FROM person WHERE email = "' + email + '" AND password = "' + password + '";', function(error, results, fields) {
+        if (error) {
+			console.log(error);
+		}
+        if (results.length === 0) {
+            res.send("You were mistaken !");
+        } else {
+            req.session.connected = true;
+            res.redirect('/logged');
+        }
+    });
+});
+
+// GET /logged
+router.get('/logged', function(req, res) {
+    if (req.session.connected) {
+        res.redirect('/homepage');
+    } else {
+        res.redirect('/login');
+    }
+});
+
+// LOGOUT
+router.get('/logout', function(req, res) {
+	req.session.destroy(function() {
+		res.redirect('/');
 	});
 });
+
 
 /* GET home page personnalisée par login */
 router.get('/homepage-:id(\\d+)', function(req, res, next) {
@@ -43,10 +78,5 @@ router.get('/profil', function(req, res, next) {
 	res.render('wildmates')
 });
 
-
-/* GET my profile */
-router.get('/login', function(req, res, next) {
-	res.render('form')
-});
 
 module.exports = router;
