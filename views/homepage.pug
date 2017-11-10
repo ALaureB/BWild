@@ -40,7 +40,8 @@ block content
 
 		section#main
 			.row
-				h2#welcome.col-xs-12.text-center
+				h2.orange.text-center #{person.firstname},
+				h2#welcome.text-center
 			.row
 				.col-xs-12
 					#widget_447227ef65d253ea2d1fa4ec3905ccf2.center-block
@@ -52,27 +53,42 @@ block content
 							my.src = "https://services.my-meteo.com/widget/js_design?ville=251&format=horizontal&nb_jours=5&coins&ombre1=000000&c1=ffffff&c2=80cbc4&c3=ffffff&c4=ffffff&c5=ffffff&police=0&t_icones=6&fond=0&masque=3&x=784&y=150&d=0&id=447227ef65d253ea2d1fa4ec3905ccf2";
 							var z = document.getElementsByTagName("script")[0]; z.parentNode.insertBefore(my, z);
 							})();
-
 			div#birthdays
-				.container
 					.row
 						h3.text-center ★ Birthdays ★
 					.row
-						p= person.birthday
-						p= person.firstname
-			
-			div#quote
-				.container
-					.row
-						h3.text-center ★ Quote of the day ★
-			div#plans
-				.container
-					.row
-						h3.text-center ★ Wild Good plans ★
-						p map
+						p= birthday.birthday
+						each card in birthday
+							div#anniv.col-xs-6.col-xs-offset-3
+								p.text-center
+									img.img-circle( height="150" src="/images/" + card.picture)
+								p.text-center Today is the birthday of #{card.firstname} #{card.lastname}
+								p.text-center 🎂 🎂 🎂 Happy Birthday 🎂 🎂 🎂
+								p.text-center
+									a(href='') Click here to discover the birthday card !
+
+
 			div#insta
-				.container
 					.row
 						h3.text-center ★ Latest BWild Instagram pics !! ★
 					.row
 						#instafeed.col-xs-12
+
+
+			div#quote
+					.row
+						h3.text-center ★ Quote of the day ★
+						h4.text-center « Age is just a number. It doesn't matter, unless you're a bottle of wine."
+						p.text-center Joan Collins
+						br
+						p.text-center
+							img#quoteimg(src="images/quote.png", alt="Quote")
+						br
+						p.text-center
+							a(href='') Click here to add a quotation !
+			div#plans
+					.row
+						h3.text-center ★ Wild Good plans ★
+						#map
+						p.text-center
+							a(href='') Click here to add a good plan !
