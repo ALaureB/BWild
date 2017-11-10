@@ -42,13 +42,11 @@ router.post('/login', function(req, res) {
 
 // GET /logged
 router.get('/logged', function(req, res) {
-	connection.query('SELECT * FROM person', function (error, resultsbd, fields) {
-	    if (req.session.connected) {
+		if (req.session.connected) {
 	        res.redirect('/homepage');
-	    } else {
+		} else {
 	        res.redirect('/login');
-	    }
-	    });
+		}
 });
 
 // LOGOUT
