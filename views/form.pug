@@ -42,6 +42,14 @@ block content
 							span *
 						input#picture(type="file", name="picture", data-rule='required', data-msg="Vérifiez votre saisie sur les champs : Le champ 'Picture' doit être renseigné.")
 						.validation
+					.form-group
+						p Langage 
+							span *
+						p JS
+							input#langageJS(type="radio", name="picture", data-rule='required', data-msg="Vérifiez votre saisie sur les champs : Le champ 'Langage' doit être renseigné.")
+						p PHP
+							input#langagePHP(type="radio", name="picture", data-rule='required', data-msg="Vérifiez votre saisie sur les champs : Le champ 'Langage' doit être renseigné.")
+						.validation
 				.rightcontact
 					.form-group
 						p Email 
@@ -63,12 +71,12 @@ block content
 						p Color
 							span *
 						select(name='color', size='1')
-							option black
-							option white
-							option blue
-							option red
-							option pink
-							option purple
+							option Black
+							option White
+							option Blue
+							option Red
+							option Pink
+							option Purple
 						.validation
 					.form-group
 						p Music
