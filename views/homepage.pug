@@ -19,18 +19,19 @@ block content
 						a(href='https://twitter.com/wildcodeschool', target="_blank")
 							i.fa.fa-twitter(aria-hidden='true')
 					li.list-inline-item
-						a(href='https://www.instagram.com/wildcodeschool/?hl=fr', target="_blank")
+						a(href='https://www.instagram.com/bwildparis/?hl=fr', target="_blank")
 							i.fa.fa-instagram(aria-hidden='true')
 				ul#profile.list-inline.col-xs-3.text-center
 					li.list-inline-item
-						img(src='http://via.placeholder.com/50x50', alt='Other')
+						img#pic(src='images/' + person.picture, alt='' + person.picture)
 					li.list-inline-item
-						a(href="" ) #First name + #Last name
+						p Hello 
+							span.orange #{person.firstname} !
 				ul#others.list-inline.col-xs-3.text-center
 					li.list-inline-item
-						img(src='http://via.placeholder.com/50x50', alt='Other')
+						img#pic(src='images/deer2.fw.png', alt='Other')
 					li.list-inline-item
-						a(href="" ) Discover Wildmates
+						a(href="/wildmates" ) Discover Wildmates
 				ul#logout.list-inline.col-xs-1.text-center
 					a(href="/logout" class="btn") Logout
 			#line.row
