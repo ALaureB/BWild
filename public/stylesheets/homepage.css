@@ -139,7 +139,7 @@ a:hover {
 	border : 2px solid #ffe4c1;
 	border-radius: 6px;
 	margin : 20px;
-	height: 290px;
+	height: 340px;
 }
 
 #widget_447227ef65d253ea2d1fa4ec3905ccf2.center-block {
@@ -166,4 +166,8 @@ a:hover {
 
 #quoteimg {
 	width: 20%;
+}
+
+.plan {
+	font-size:1.3em;
 }
