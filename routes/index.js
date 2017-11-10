@@ -20,4 +20,8 @@ router.get('/profil', function(req, res, next) {
 	res.render('wildmates')
 });
 
+router.get('/login', function(req, res, next) {
+	res.render('form')
+});
+
 module.exports = router;
