@@ -80,22 +80,70 @@ a:hover {
 
 /* Main */
 
+#welcome.text-center {
+	margin-top: 5px;
+}
+
 #main {
 	margin-top : 150px;
 }
 
-#birthdays, #weather, #quote, #plans, #horos  {
+#birthdays {
 	border : 2px solid #ffe4c1;
 	border-radius: 6px;
 	margin : 20px;
-	height: 150px;
+	height: 480px;
 }
+
+#anniv {
+	background-color :rgb(31, 165, 151);
+	color: white;
+	line-height: 2;
+	border-radius: 6px;
+	font-weight: 700;
+	font-size: 1.4em;
+	padding: 15px;
+}
+
+#anniv p a {
+	font-size:0.9em;
+	color :white;
+	text-decoration: underline;
+}
+
+#anniv p a:hover {
+	opacity: 0.7;
+	transition: .8s ease;
+}
+
 
 #insta {
 	border : 2px solid #ffe4c1;
 	border-radius: 6px;
 	margin : 20px;
-	height: 320px;
+	height: 290px;
+}
+
+#quote {
+	border : 2px solid #ffe4c1;
+	border-radius: 6px;
+	margin : 20px;
+	height: 400px;
+}
+
+.small {
+	font-size: 1.2em;
+}
+
+#plans {
+	border : 2px solid #ffe4c1;
+	border-radius: 6px;
+	margin : 20px;
+	height: 290px;
+}
+
+#widget_447227ef65d253ea2d1fa4ec3905ccf2.center-block {
+	margin-top: 20px;
 }
 
 
@@ -114,4 +162,8 @@ a:hover {
 #instafeed img {
   display:block;
   width:80%;
+}
+
+#quoteimg {
+	width: 20%;
 }
