@@ -168,9 +168,9 @@
 }
 
 .image_wilder {
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
-.image_wilder > img {
-    width: 80%;
+#homepage_photo {
+    width: 75%;
 }
