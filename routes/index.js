@@ -28,26 +28,29 @@ router.post('/login', function(req, res) {
     let email = req.body.email;
     let password = req.body.password;
     connection.query('SELECT * FROM person WHERE email = "' + email + '" AND password = "' + password + '";', function(error, results, fields) {
-        if (error) {
+		connection.query('SELECT id_p FROM person WHERE email = "' + email + '" AND password = "' + password + '";', function(error, id, fields){
+			console.log(results[0].id_p);
+		if (error) {
 			console.log(error);
 		}
         if (results.length === 0) {
             res.send("You were mistaken !");
         } else {
-            req.session.connected = true;
-            res.redirect('/logged');
-        }
+			req.session.connected = true;
+            res.redirect('/homepage-' + results[0].id_p);
+		}
+	});
     });
 });
 
 // GET /logged
-router.get('/logged', function(req, res) {
-		if (req.session.connected) {
-	        res.redirect('/homepage');
-		} else {
-	        res.redirect('/login');
-		}
-});
+// router.get('/logged', function(req, res) {
+// 	if (req.session.connected) {
+// 		res.redirect('/homepage-' + results[0].id_p);
+// 	} else {
+// 		res.redirect('/login');
+// 	}
+// });
 
 // LOGOUT
 router.get('/logout', function(req, res) {
