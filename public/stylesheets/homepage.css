@@ -63,6 +63,21 @@ hr {
     border-top: 2px solid #f9a02e;
 }
 
+#pic {
+	width : 50px;
+	height: 50px;
+}
+
+a:hover {
+	text-decoration: none;
+	opacity: 0.7;
+	transition: .8s ease;
+}
+
+.orange {
+	color : #f9a02e;
+}
+
 /* Main */
 
 #main {
