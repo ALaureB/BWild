@@ -37,6 +37,19 @@ router.get('/homepage', function(req, res, next) {
 	});
 });
 
+/* Homepage Card for modifications */
+router.get('/homepage-card:id(\\d+)', function(req, res) {
+	connection.query('SELECT * FROM person WHERE id_p = ?',[req.params.id], function (error, results, fields) {
+		if (error) {
+			console.log(error);
+		}
+		console.log(results);
+		res.render('card', {
+		profil:results[0]
+	});
+});
+});
+
 /* GET Wildmates */
 router.get('/profil', function(req, res, next) {
 	res.render('wildmates')
