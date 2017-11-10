@@ -1,0 +1,105 @@
+extends layout
+block css
+	link(rel='stylesheet', type='text/css', href='/stylesheets/nav_login.css')
+	link(rel='stylesheet', type='text/css', href='/stylesheets/form.css')
+	
+
+block content
+	include navbar_login
+	.row
+		.col-xs-6.image_wilder
+			img(src="https://media.licdn.com/mpr/mpr/shrinknp_100_100/AAEAAQAAAAAAAAs6AAAAJDhlYzY0NTg3LTdhM2ItNDM3MS05YmY2LTZlY2NhZGNkMTBjYg.jpg", alt="cerf")
+
+		form.col-xs-6
+			h1 To become "Born to be Wild", please complete this form :
+			.contentform
+				#sendmessage  Your message has been sent successfully. Thank you. 
+				.leftcontact
+					.form-group
+						p Firstname 
+							span *
+						span.icon-case
+							i.fa.fa-male
+						input#nom(type='text', name='prenom', data-rule='required', data-msg="Vérifiez votre saisie sur les champs : Le champ 'Prénom' doit être renseigné.")
+						.validation
+					.form-group
+						p Lastname 
+							span *
+						span.icon-case
+							i.fa.fa-user
+						input#prenom(type='text', name='nom', data-rule='required', data-msg="Vérifiez votre saisie sur les champs : Le champ 'Nom' doit être renseigné.")
+						.validation
+					.form-group
+						p Birthday 
+							span *
+						span.icon-case
+							i.fa.fa-birthday-cake
+						input#email(type='date', min="1940-01-01", name='birthday', data-rule='required', data-msg="Vérifiez votre saisie sur les champs : Le champ 'Birthday' est obligatoire.")
+						.validation
+					.form-group
+						p Picture 
+							span *
+						input#picture(type="file", name="picture", data-rule='required', data-msg="Vérifiez votre saisie sur les champs : Le champ 'Picture' doit être renseigné.")
+						.validation
+				.rightcontact
+					.form-group
+						p Email 
+							span *
+						span.icon-case
+							i.fa.fa-envelope
+						input#email(type='email', name='email', data-rule='required', data-msg="Vérifiez votre saisie sur les champs : Le champ 'Email' doit être renseigné.")
+						.validation
+					.form-group
+						p Password 
+							span *
+						span.icon-case
+							i.fa.fa-key
+						input#password(type='password', name='password', data-rule='required', data-msg="Vérifiez votre saisie sur les champs : Le champ 'Password' doit être renseigné.")
+						.validation
+					.form-group
+						p Form :
+					.form-group
+						p Color
+							span *
+						select(name='color', size='1')
+							option black
+							option white
+							option blue
+							option red
+							option pink
+							option purple
+						.validation
+					.form-group
+						p Music
+							span *
+						select(name='musique', size='1')
+							option Pop
+							option RnB
+							option Soul
+							option House / Techno
+							option Reggae
+							option Classic
+						.validation
+					.form-group
+						p Animal
+							span *
+						select(name='animal', size='1')
+							option Dog
+							option Cat
+							option Horse
+							option Hamster
+							option Cochon d'Inde
+							option Cow
+						.validation
+					.form-group
+						p Drink
+							span *
+						select(name='drink', size='1')
+							option Beer
+							option Wine white or red
+							option Mojito
+							option Tequila sunrise
+							option Cuba Libre
+							option Blue Lagoon
+						.validation
+			button.bouton-contact(type='submit') Send
