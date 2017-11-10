@@ -14,7 +14,7 @@ var userFeed = new Instafeed({
   resolution: 'standard_resolution',
   template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
   sortBy: 'most-recent',
-  limit: 4,
+  limit: 5,
   links: true
 });
 userFeed.run();
