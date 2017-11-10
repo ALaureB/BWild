@@ -83,8 +83,8 @@ router.get('/homepage-:id(\\d+)', function(req, res, next) {
 });
 
 /* Homepage Card for modifications */
-router.get('/homepage-card:id(\\d+)', function(req, res) {
-	connection.query('SELECT * FROM person WHERE id_p = ?',[req.params.id], function (error, results, fields) {
+router.get('/homepage-card-2', function(req, res) {
+	connection.query('SELECT * FROM person WHERE id_p = 2', function (error, results, fields) {
 		if (error) {
 			console.log(error);
 		}
@@ -96,8 +96,8 @@ router.get('/homepage-card:id(\\d+)', function(req, res) {
 });
 
 /* GET Wildmates */
-router.get('/profil', function(req, res, next) {
-	res.render('wildmates')
+router.get('/wildmates', function(req, res, next) {
+res.render('wildmates');
 });
 
 

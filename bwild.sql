@@ -99,8 +99,9 @@ CREATE TABLE `person` (
   `music` varchar(25) DEFAULT NULL,
   `animal` varchar(25) DEFAULT NULL,
   `drink` varchar(25) DEFAULT NULL,
+  `language` varchar(15) DEFAULT NULL,
   PRIMARY KEY (`id_p`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -109,7 +110,7 @@ CREATE TABLE `person` (
 
 LOCK TABLES `person` WRITE;
 /*!40000 ALTER TABLE `person` DISABLE KEYS */;
-INSERT INTO `person` VALUES (1,'Gwendoline','BELNARD','1978-09-04',NULL,'gbelnard@gmail.com','gwen','Pink','Reggaeton','Cat','Beer');
+INSERT INTO `person` VALUES (1,'Gwendoline','BELNARD','1978-09-04','gwendo.jpg','gbelnard@gmail.com','gwen','Pink','Reggaeton','Cat','Beer','JS'),(2,'Jack','Wild','2014-11-10','jack.jpg','jack@yopmail.com','jack','black','soul','cat','mojito','PHP');
 /*!40000 ALTER TABLE `person` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -181,4 +182,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-11-09 19:11:59
+-- Dump completed on 2017-11-10 14:21:13
