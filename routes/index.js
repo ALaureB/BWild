@@ -19,6 +19,7 @@ router.get('/login', function(req, res) {
     // page de login (formulaire)
     res.render('form');
 });
+
 // POST /admin (page d'affichage une fois le login et password validés)
 router.post('/login', function(req, res) {
     // page de login 
@@ -73,7 +74,7 @@ router.get('/homepage-:id(\\d+)', function(req, res, next) {
 				res.render('homepage', {
 					title: 'Accueil - BWild !!',
 					birthday : resultsbd.filter(function(valeur) {
-    					return (valeur.birthday.getDate() == date.getDate() &&  valeur.birthday.getMonth() == date.getMonth());
+						return (valeur.birthday.getDate() == date.getDate() &&  valeur.birthday.getMonth() == date.getMonth());
 					}),
 					
 					person : results[0],
