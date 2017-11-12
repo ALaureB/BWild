@@ -1,0 +1,18 @@
+extends layout
+
+block css
+	link(rel="stylesheet", href="/stylesheets/perso_card.css")
+
+block content
+	#bloc_page
+		img(src='images/' + profil.picture, alt='')
+		h1#item1
+			p
+				i.fa.fa-bullhorn(aria-hidden='true') Hi ! 
+		h2#item2
+			p We know you love #{profil.animal} and #{profil.music}
+		h2#item3
+			p and your favourite drink is #{profil.drink} (Cheers !) But it's a particular day :
+		h2#item4
+			p
+				i.fa.fa-birthday-cake(aria-hidden='true') Happy Wild Birthday #{profil.firstname}

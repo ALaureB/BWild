@@ -1,0 +1,35 @@
+.navbar {
+    border-radius: 0;
+}
+
+.navbar-header {
+    width: 475px;
+}
+
+img {
+    width: 25%;
+    margin-left: 10px;
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    border-bottom: 2px solid #f9a02e;
+}
+
+
+
+.padding {
+    padding: 5px;
+}
+
+input.form-control {
+    border: 2px solid rgb(31, 165, 151);
+    margin-right: 15px;
+}
+
+button.btn.btn-default {
+    padding: 6px 18px;
+    background-color: rgb(31, 165, 151);
+    font-weight: bolder;
+    color: white;
+}

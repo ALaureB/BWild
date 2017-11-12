@@ -1,0 +1,102 @@
+extends layout
+
+block css
+	link(rel='stylesheet', type='text/css', href='/stylesheets/homepage.css')
+
+block content
+	// Navbar
+	.container-fluid
+		header
+			nav#navbar.row
+				.col-xs-3.text-center
+					a(href='/')
+						img#logo(src='/images/bwild_logo.svg', alt='BWild logo')
+				ul#links.col-xs-2.list-inline.text-left
+					li.list-inline-item
+						a(href='https://www.facebook.com/wildcodeschool/', target="_blank")
+							i.fa.fa-facebook-official(aria-hidden='true')
+					li.list-inline-item
+						a(href='https://twitter.com/wildcodeschool', target="_blank")
+							i.fa.fa-twitter(aria-hidden='true')
+					li.list-inline-item
+						a(href='https://www.instagram.com/bwildparis/?hl=fr', target="_blank")
+							i.fa.fa-instagram(aria-hidden='true')
+				ul#profile.list-inline.col-xs-3.text-center
+					li.list-inline-item
+						img#pic(src='images/' + person.picture, alt='' + person.picture)
+					li.list-inline-item
+						p Hello 
+							span.orange #{person.firstname} !
+				ul#others.list-inline.col-xs-3.text-center
+					li.list-inline-item
+						img#pic(src='images/deer2.fw.png', alt='Other')
+					li.list-inline-item
+						a(href="/wildmates" ) Discover Wildmates
+				ul#logout.list-inline.col-xs-1.text-center
+					a(href="/logout" class="btn") Logout
+			#line.row
+				.col-xs-12.text-center
+					hr
+
+		section#main
+			.row
+				h2.orange.text-center #{person.firstname},
+				h2#welcome.text-center
+			.row
+				.col-xs-12
+					#widget_447227ef65d253ea2d1fa4ec3905ccf2.center-block
+						span#l_447227ef65d253ea2d1fa4ec3905ccf2
+							a(href='http://www.mymeteo.info/r/paris_Tc') Paris France météo aujourd'hui
+						script(type='text/javascript').
+							(function() {
+							var my = document.createElement("script"); my.type = "text/javascript"; my.async = true;
+							my.src = "https://services.my-meteo.com/widget/js_design?ville=251&format=horizontal&nb_jours=5&coins&ombre1=000000&c1=ffffff&c2=80cbc4&c3=ffffff&c4=ffffff&c5=ffffff&police=0&t_icones=6&fond=0&masque=3&x=784&y=150&d=0&id=447227ef65d253ea2d1fa4ec3905ccf2";
+							var z = document.getElementsByTagName("script")[0]; z.parentNode.insertBefore(my, z);
+							})();
+			div#birthdays
+					.row
+						h3.text-center ★ Birthdays ★
+					.row
+						p= birthday.birthday
+						each card in birthday
+							div#anniv.col-xs-6.col-xs-offset-3
+								p.text-center
+									img.img-circle( height="150" src="/images/" + card.picture)
+								p.text-center Today is the birthday of #{card.firstname} #{card.lastname}
+								p.text-center 🎂 🎂 🎂 Happy Birthday 🎂 🎂 🎂
+								p.text-center
+									a(href='/homepage-card-2') Click here to discover the birthday card !
+
+
+			div#insta
+					.row
+						h3.text-center ★ Latest BWild Instagram pics !! ★
+					.row
+						#instafeed.col-xs-12
+
+
+			div#quote
+					.row
+						h3.text-center ★ Quote of the day ★
+						h4.text-center « Age is just a number. It doesn't matter, unless you're a bottle of wine."
+						p.text-center Joan Collins
+						br
+						p.text-center
+							img#quoteimg(src="images/quote.png", alt="Quote")
+						br
+						p.text-center
+							a(href='') Click here to add a quotation !
+			div#plans
+					.row
+						h3.text-center ★ Wild Good plans ★
+						p.text-center.plan Go drink a beer at "Le bistrot des artistes" (Alexis)
+						br
+						br
+						p.text-center.plan The chocolate mousse from Gladines (boulevard Saint-Germain) is very nice !!! (Cécile)
+						br
+						br
+						p.text-center.plan I loooovvee the vegan restaurant of Cardinal Lemoin Street !! (Crider)
+						br
+						br
+						p.text-center
+							a(href='') Click here to add a good plan !

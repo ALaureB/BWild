@@ -1,0 +1,173 @@
+body {
+	padding: 0;
+}
+
+
+/* Navbar */
+
+.container-fluid {
+	padding: 0;
+}
+
+header {
+	width: 100%;
+	position: fixed;
+	line-height: 0;
+	z-index: 20;
+	background-color: white;
+}
+
+header p, a {
+	color : rgb(31, 165, 151);
+}
+
+#logo {
+	width: 12em;
+	animation: 1s ease-in-out 0s 1 slideInFromLeft;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#links {
+	padding-top: 44px;
+}
+
+#profile, #others {
+	padding-top: 32px;
+}
+
+#links li a i {
+	font-size: 1.6em;
+	color: rgb(31, 165, 151);
+	margin-right: 6px;
+	margin-left: 6px;
+}
+
+#links li:hover {
+	opacity: 0.7;
+	transition: .8s ease;
+}
+
+#line hr {
+  margin : 0;
+}
+
+hr {
+    border-top: 2px solid #f9a02e;
+}
+
+#pic {
+	width : 50px;
+	height: 50px;
+}
+
+a:hover {
+	text-decoration: none;
+	opacity: 0.7;
+	transition: .8s ease;
+}
+
+.orange {
+	color : #f9a02e;
+}
+
+/* Main */
+
+#welcome.text-center {
+	margin-top: 5px;
+}
+
+#main {
+	margin-top : 150px;
+}
+
+#birthdays {
+	border : 2px solid #ffe4c1;
+	border-radius: 6px;
+	margin : 20px;
+	height: 480px;
+}
+
+#anniv {
+	background-color :rgb(31, 165, 151);
+	color: white;
+	line-height: 2;
+	border-radius: 6px;
+	font-weight: 700;
+	font-size: 1.4em;
+	padding: 15px;
+}
+
+#anniv p a {
+	font-size:0.9em;
+	color :white;
+	text-decoration: underline;
+}
+
+#anniv p a:hover {
+	opacity: 0.7;
+	transition: .8s ease;
+}
+
+
+#insta {
+	border : 2px solid #ffe4c1;
+	border-radius: 6px;
+	margin : 20px;
+	height: 290px;
+}
+
+#quote {
+	border : 2px solid #ffe4c1;
+	border-radius: 6px;
+	margin : 20px;
+	height: 400px;
+}
+
+.small {
+	font-size: 1.2em;
+}
+
+#plans {
+	border : 2px solid #ffe4c1;
+	border-radius: 6px;
+	margin : 20px;
+	height: 340px;
+}
+
+#widget_447227ef65d253ea2d1fa4ec3905ccf2.center-block {
+	margin-top: 20px;
+}
+
+
+
+/* Instagram */
+
+#instafeed {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 65px;
+}
+
+#instafeed img {
+  display:block;
+  width:80%;
+}
+
+#quoteimg {
+	width: 20%;
+}
+
+.plan {
+	font-size:1.3em;
+}

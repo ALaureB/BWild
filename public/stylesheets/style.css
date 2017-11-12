@@ -1,6 +1,5 @@
 body {
-  padding: 50px;
-  font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 };
   
 h1 {
@@ -8,15 +7,18 @@ h1 {
 }
 
 h2 {
-
+	color: rgb(31, 165, 151);
+	font-weight: 700;
 }
 
 h3 {
-
+	color: #f9a02e;
+	font-weight: 700;
+	padding-bottom: 15px;
 }
 
 h4 {
-
+	color: rgb(31, 165, 151);
 }
 
 a {
@@ -27,13 +29,21 @@ a:hover {
 
 }
 
-.button {
 
+.btn {
+	margin: 10px;
+	color: #ffffff;
+	background-color: #f9a02e;
+	font-size: 1.2em;
 }
 
-.button:hover {
-	
+.btn:hover {
+	color: #ffffff;
+	background-color: #f9a02e;
+	opacity: 0.8;
+	transition: .8s ease;
 }
+
 
 .important {
 

@@ -1,0 +1,56 @@
+extends layout
+
+block css
+	link(rel='stylesheet', type='text/css', href='/stylesheets/card.css')
+	link(rel='stylesheet', type='text/css', href='/stylesheets/homepage.css')
+
+block content
+	// Navbar
+	.container-fluid
+		header
+			nav#navbar.row
+				.col-xs-3.text-center
+					a(href='/')
+						img#logo(src='/images/bwild_logo.svg', alt='BWild logo')
+				ul#links.col-xs-2.list-inline.text-left
+					li.list-inline-item
+						a(href='https://www.facebook.com/wildcodeschool/', target="_blank")
+							i.fa.fa-facebook-official(aria-hidden='true')
+					li.list-inline-item
+						a(href='https://twitter.com/wildcodeschool', target="_blank")
+							i.fa.fa-twitter(aria-hidden='true')
+					li.list-inline-item
+						a(href='https://www.instagram.com/wildcodeschool/?hl=fr', target="_blank")
+							i.fa.fa-instagram(aria-hidden='true')
+				ul#profile.list-inline.col-xs-3.text-center
+					li.list-inline-item
+						img(src='http://via.placeholder.com/50x50', alt='Other')
+					li.list-inline-item
+						a(href="" ) #First name + #Last name
+				ul#logout.list-inline.col-xs-1.text-center
+					a(href="/logout" class="btn") Logout
+			#line.row
+				.col-xs-12.text-center
+					hr
+
+		.container
+			div.col-xs-4.cadre
+				div.top
+					a(href='#')
+						img.profile.photo(alt='Florie Lesueur', src='https://media.licdn.com/mpr/mpr/shrinknp_100_100/AAEAAQAAAAAAAAs6AAAAJDhlYzY0NTg3LTdhM2ItNDM3MS05YmY2LTZlY2NhZGNkMTBjYg.jpg')
+				p.name(href='/') Florie Lesueur
+				p.describe Web developper fullstack JS (React) at Wild Code School (in training)
+
+			div.col-xs-offset-1.col-xs-4.cadre
+				div.top
+					a(href='#')
+						img.profile.photo(alt='Florie Lesueur', src='https://media.licdn.com/mpr/mpr/shrinknp_100_100/AAEAAQAAAAAAAAs6AAAAJDhlYzY0NTg3LTdhM2ItNDM3MS05YmY2LTZlY2NhZGNkMTBjYg.jpg')
+				h3.name(href='/') Florie Lesueur
+				p.describe Web developper fullstack JS (React) at Wild Code School (in training)
+
+			div.col-xs-offset-1.col-xs-4.cadre
+				div.top
+					a(href='#')
+						img.profile.photo(alt='Florie Lesueur', src='https://media.licdn.com/mpr/mpr/shrinknp_100_100/AAEAAQAAAAAAAAs6AAAAJDhlYzY0NTg3LTdhM2ItNDM3MS05YmY2LTZlY2NhZGNkMTBjYg.jpg')
+				h3.name(href='/') Florie Lesueur
+				p.describe Web developper fullstack JS (React) at Wild Code School (in training)

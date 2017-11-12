@@ -1,0 +1,20 @@
+nav.navbar.navbar-default
+    .container-fluid
+        .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+            a.nav.navbar-nav(href='#')
+                img(src='images/bwild_logo.svg')
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+            form.navbar-form.navbar-right(method="POST")
+                label.padding(for="email") E-mail :
+                .form-group
+                    input.form-control(name='email', required='', autofocus='', type='text', placeholder='bob@yopmail.com')
+                label.padding(for="password") Password :
+                .form-group
+                    input.form-control(name='password', placeholder='Password', type='password' required='')
+                .form-group
+                    button.btn.btn-default.padding(type='submit') LOGIN
